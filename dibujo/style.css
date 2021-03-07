@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --skin: #fed90f;
+  --background: #ed4042;
+  --red: #ed2860;
+  --dark-red: #680524;
+  --black: #00243a;
+  --white: #fff;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  width: 100px;
+  height: 200px;
+  background: var(--skin);
+  border-radius: 50px;
+  position: relative;
+}
+
+.eye-left {
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 20px);
+  border-radius: 50%;
+}
