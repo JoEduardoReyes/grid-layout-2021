@@ -11,6 +11,7 @@
   --dark-red: #680524;
   --black: #00243a;
   --white: #fff;
+  --shadow: -5px 5px 3px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -30,6 +31,7 @@ body {
   background: var(--skin);
   border-radius: 50px;
   position: relative;
+  box-shadow: var(--shadow);
 }
 
 /* ojos */
@@ -81,11 +83,58 @@ body {
 
 .nose {
   background-color: var(--skin);
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   position: absolute;
-  top: 100px;
-  left: calc(50% - 14px);
+  top: 105px;
+  left: calc(50% - 13px);
   border-radius: 50%;
-  box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  z-index: 2;
+}
+
+/* orejas */
+
+.ears {
+  height: 25px;
+  width: 20px;
+  position: absolute;
+  z-index: -1;
+  top: 120px;
+  background-color: var(--skin);
+}
+
+.left-ear {
+  left: -10px;
+  border-radius: 40% 40% 40% 60%;
+}
+
+.right-ear {
+  right: -10px;
+  border-radius: 40% 40% 60% 40%;
+}
+
+/* boca */
+
+.mouth {
+  position: absolute;
+  left: -5px;
+  top: 125px;
+  width: 110px;
+  height: 75px;
+  background-color: #d1b271;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
+.lips {
+  position: absolute;
+  left: calc(50% - (60% / 2));
+  top: 45%;
+  height: 18px;
+  width: 60%;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 50% 50%;
+  box-shadow: var(--shadow);
 }
