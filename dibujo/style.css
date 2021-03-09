@@ -6,9 +6,6 @@
 
 :root {
   --skin: #fed90f;
-  --background: #ed4042;
-  --red: #ed2860;
-  --dark-red: #680524;
   --black: #00243a;
   --white: #fff;
   --shadow: -5px 5px 3px rgba(0, 0, 0, 0.1);
@@ -20,7 +17,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: calc(100vh - 20px);
   display: flex;
   justify-content: center;
   align-items: center;
