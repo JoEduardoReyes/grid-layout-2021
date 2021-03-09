@@ -13,6 +13,10 @@
   --white: #fff;
 }
 
+body {
+  background-color: skyblue;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -28,12 +32,60 @@
   position: relative;
 }
 
-.eye-left {
-  width: 20px;
-  height: 20px;
+/* ojos */
+
+.eye {
+  width: 47px;
+  height: 47px;
   background-color: var(--white);
   position: absolute;
-  top: 80px;
-  left: calc(50% - 20px);
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 75px;
+}
+
+.eye-left {
+  left: -2px;
+}
+
+.eye-right {
+  right: -2px;
+}
+
+.pupil {
+  background-color: var(--black);
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+}
+
+.eyebrow {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  background-color: var(--skin);
+  top: 75px;
+  border-radius: 50%;
+}
+
+.eyebrow-left {
+  left: -3px;
+}
+.eyebrow-right {
+  right: -3px;
+}
+
+/* nariz */
+
+.nose {
+  background-color: var(--skin);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 14px);
+  border-radius: 50%;
+  box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.1);
 }
