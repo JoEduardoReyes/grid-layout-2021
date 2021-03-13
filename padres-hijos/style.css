@@ -1,0 +1,35 @@
+.abuelo-flex {
+  height: 120px;
+  background-color: blueviolet;
+  display: flex;
+}
+
+.padre-flex {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  background-color: pink;
+}
+
+.hijo-flex {
+  width: 50%;
+  height: 50%;
+  background-color: wheat;
+}
+
+.abuelo-grid {
+  background-color: blueviolet;
+  height: 120px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.padre-grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  background-color: pink;
+}
+
+.hijo-grid {
+  background-color: wheat;
+}
