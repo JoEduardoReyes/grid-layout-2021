@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.maincontainer {
+  width: 100%;
+  max-width: 100vh;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: 100px;
+  grid-auto-flow: row; /* decide a que direcction ira el grid implicito */
+  grid-auto-rows: 100px;
+}
+
+.item {
+  border: red solid 2px;
+}
